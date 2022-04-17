@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "H4ovuOdeI60dvF2FEhmvJmYCB9rwCB1uW3EtBfFEF32OZN9wE+9WilW1nilc5Sfg3p7Fw1dqYswhU8GMsToohg==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\CreateElectronicSignature\\CreateElectronicSignature\\CreateElectronicSignature.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nguye\\.nuget\\packages\\syncfusion.compression.base\\20.1.0.48\\syncfusion.compression.base.20.1.0.48.nupkg.sha512",
+    "C:\\Users\\nguye\\.nuget\\packages\\syncfusion.licensing\\20.1.0.48\\syncfusion.licensing.20.1.0.48.nupkg.sha512",
+    "C:\\Users\\nguye\\.nuget\\packages\\syncfusion.pdf.winforms\\20.1.0.48\\syncfusion.pdf.winforms.20.1.0.48.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CreateElectronicSignature/1.0.0": {
+        "dependencies": {
+          "Syncfusion.Pdf.WinForms": "20.1.0.48"
+        },
+        "runtime": {
+          "CreateElectronicSignature.dll": {}
+        }
+      },
+      "Syncfusion.Compression.Base/20.1.0.48": {
+        "runtime": {
+          "lib/net5.0/Syncfusion.Compression.Base.dll": {
+            "assemblyVersion": "20.1500.0.48",
+            "fileVersion": "20.1500.0.48"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.1.0.48": {
+        "runtime": {
+          "lib/net6.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.1.0.48",
+            "fileVersion": "20.1.0.48"
+          }
+        }
+      },
+      "Syncfusion.Pdf.WinForms/20.1.0.48": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.48",
+          "Syncfusion.Licensing": "20.1.0.48"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "assemblyVersion": "20.1500.0.48",
+            "fileVersion": "20.1500.0.48"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CreateElectronicSignature/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Syncfusion.Compression.Base/20.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mUf2cwPyp7R618D7xN3sQOjp5TiNcXA7c8FN3k/dLej2Tnp59Kl2Jm8k5fg9+x302s+KvJvMoK3Ta0ovkRFYEQ==",
+      "path": "syncfusion.compression.base/20.1.0.48",
+      "hashPath": "syncfusion.compression.base.20.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f+nrjyw08N1OIUmDbn+zv2MKDf03o5yf5j/Ypk2DIZDfQuIKp5t9zyxOtfL3Ya7oNUtmSPJQ5zNuAzZln4JreA==",
+      "path": "syncfusion.licensing/20.1.0.48",
+      "hashPath": "syncfusion.licensing.20.1.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.WinForms/20.1.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c8cXBsrhuUpw+xdVY1BNNMKiPHyVBEP/lPxTaG6zF4IkvXrOT7vcMpymi6cZt+to1l2DzhPaqD6BwakXBmc8Ug==",
+      "path": "syncfusion.pdf.winforms/20.1.0.48",
+      "hashPath": "syncfusion.pdf.winforms.20.1.0.48.nupkg.sha512"
+    }
+  }
+}
