@@ -14,7 +14,7 @@ namespace CreateElectronicSignature
         private static RSA instance = null;
         private static readonly object padlock = new object();
 
-        public RSA() { }
+        public RSA() {  }
 
         public static RSA Instance
         {
@@ -56,9 +56,9 @@ namespace CreateElectronicSignature
                 bool trust = rsa.VerifyData(data,"SHA512", signature);
                 return trust;            
         }
-        public void LoadKeyFromXML()
+        public void LoadKeyFromXML(string filePath)
         {
-            publicAndPrivateKey = File.ReadAllText(@"D:\RSA\Key.xml");
+            publicAndPrivateKey = File.ReadAllText(filePath);
             rsa.FromXmlString(publicAndPrivateKey);
             publicKey = rsa.ExportParameters(true);
             privateKey = rsa.ExportParameters(true);
@@ -89,19 +89,20 @@ namespace CreateElectronicSignature
             return publicAndPrivateKey;
         }
 
-        public void SaveKeyToXML()
+        public void SaveKeyToXML(string filename)
         {
             publicAndPrivateKey = rsa.ToXmlString(true);
-            File.WriteAllText(@"D:\RSA\Key.xml", publicAndPrivateKey);
+            string path = @"D:\RSA\"+filename+".xml";
+            File.WriteAllText(path, publicAndPrivateKey);
         }
-        public void MakeCert()
-        {         
-            var req = new CertificateRequest("cn=NguyenHuuTru", rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
-            var cert = req.CreateSelfSigned(DateTimeOffset.Now, DateTimeOffset.Now.AddYears(5));
-
+        public void MakeCert(string name ,RSA key, int duration, string pass)
+        {       
+            
+            var req = new CertificateRequest("cn="+name, rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
+            var cert = req.CreateSelfSigned(DateTimeOffset.Now, DateTimeOffset.Now.AddYears(duration));
             // Create PFX (PKCS #12) with private key
-            File.WriteAllBytes(@"D:\RSA\mycert.pfx", cert.Export(X509ContentType.Pfx, "123456"));
-
+            string path = @"D:\RSA\" + name + ".pfx";
+            File.WriteAllBytes(path, cert.Export(X509ContentType.Pfx, pass));
             // Create Base 64 encoded CER (public key only)
             //File.WriteAllText("c:\\temp\\mycert.cer",
             //    "-----BEGIN CERTIFICATE-----\r\n"

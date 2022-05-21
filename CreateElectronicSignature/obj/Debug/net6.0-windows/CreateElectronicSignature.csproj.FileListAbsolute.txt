@@ -19,3 +19,10 @@ D:\C#\CreateElectronicSignature\CreateElectronicSignature\obj\Debug\net6.0-windo
 D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
 D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Syncfusion.Licensing.dll
 D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Syncfusion.Pdf.Base.dll
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Krypton.Toolkit.dll
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\obj\Debug\net6.0-windows\CreateElectronicSignature.Properties.Resources.resources
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\obj\Debug\net6.0-windows\CreateElectronicSignature.Form2.resources
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Syncfusion.PdfViewer.Windows.dll
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\bin\Debug\net6.0-windows\Syncfusion.Shared.Base.dll
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\obj\Debug\net6.0-windows\CreateElectronicSignature.Form3.resources
+D:\C#\CreateElectronicSignature\CreateElectronicSignature\obj\Debug\net6.0-windows\CreateElectronicSignature.Form4.resources

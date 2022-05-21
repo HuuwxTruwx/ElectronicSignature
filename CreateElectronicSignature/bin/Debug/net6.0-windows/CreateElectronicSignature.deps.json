@@ -8,37 +8,72 @@
     ".NETCoreApp,Version=v6.0": {
       "CreateElectronicSignature/1.0.0": {
         "dependencies": {
-          "Syncfusion.Pdf.WinForms": "20.1.0.48"
+          "Krypton.Toolkit": "65.22.4.94",
+          "Syncfusion.Pdf.WinForms": "20.1.0.50",
+          "Syncfusion.PdfViewer.Windows": "20.1.0.50"
         },
         "runtime": {
           "CreateElectronicSignature.dll": {}
         }
       },
-      "Syncfusion.Compression.Base/20.1.0.48": {
+      "Krypton.Toolkit/65.22.4.94": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Toolkit.dll": {
+            "assemblyVersion": "65.22.4.94",
+            "fileVersion": "65.22.4.94"
+          }
+        }
+      },
+      "Syncfusion.Compression.Base/20.1.0.50": {
         "runtime": {
           "lib/net5.0/Syncfusion.Compression.Base.dll": {
-            "assemblyVersion": "20.1500.0.48",
-            "fileVersion": "20.1500.0.48"
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
           }
         }
       },
-      "Syncfusion.Licensing/20.1.0.48": {
+      "Syncfusion.Licensing/20.1.0.50": {
         "runtime": {
           "lib/net6.0/Syncfusion.Licensing.dll": {
-            "assemblyVersion": "20.1.0.48",
-            "fileVersion": "20.1.0.48"
+            "assemblyVersion": "20.1.0.50",
+            "fileVersion": "20.1.0.50"
           }
         }
       },
-      "Syncfusion.Pdf.WinForms/20.1.0.48": {
+      "Syncfusion.Pdf.WinForms/20.1.0.50": {
         "dependencies": {
-          "Syncfusion.Compression.Base": "20.1.0.48",
-          "Syncfusion.Licensing": "20.1.0.48"
+          "Syncfusion.Compression.Base": "20.1.0.50",
+          "Syncfusion.Licensing": "20.1.0.50"
         },
         "runtime": {
           "lib/net5.0-windows7.0/Syncfusion.Pdf.Base.dll": {
-            "assemblyVersion": "20.1500.0.48",
-            "fileVersion": "20.1500.0.48"
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      },
+      "Syncfusion.PdfViewer.Windows/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Compression.Base": "20.1.0.50",
+          "Syncfusion.Licensing": "20.1.0.50",
+          "Syncfusion.Pdf.WinForms": "20.1.0.50",
+          "Syncfusion.Shared.Base": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.PdfViewer.Windows.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
+          }
+        }
+      },
+      "Syncfusion.Shared.Base/20.1.0.50": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.1.0.50"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Syncfusion.Shared.Base.dll": {
+            "assemblyVersion": "20.1500.0.50",
+            "fileVersion": "20.1500.0.50"
           }
         }
       }
@@ -50,26 +85,47 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Syncfusion.Compression.Base/20.1.0.48": {
+    "Krypton.Toolkit/65.22.4.94": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mUf2cwPyp7R618D7xN3sQOjp5TiNcXA7c8FN3k/dLej2Tnp59Kl2Jm8k5fg9+x302s+KvJvMoK3Ta0ovkRFYEQ==",
-      "path": "syncfusion.compression.base/20.1.0.48",
-      "hashPath": "syncfusion.compression.base.20.1.0.48.nupkg.sha512"
+      "sha512": "sha512-/C/d38IZcWlaNtW8D9yF7Souy3q73WaBI5V2G/vmxn+c6MOGu1l97ZKCFXGe1RU0raBSYAMana1gzGtEs06ddw==",
+      "path": "krypton.toolkit/65.22.4.94",
+      "hashPath": "krypton.toolkit.65.22.4.94.nupkg.sha512"
     },
-    "Syncfusion.Licensing/20.1.0.48": {
+    "Syncfusion.Compression.Base/20.1.0.50": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-f+nrjyw08N1OIUmDbn+zv2MKDf03o5yf5j/Ypk2DIZDfQuIKp5t9zyxOtfL3Ya7oNUtmSPJQ5zNuAzZln4JreA==",
-      "path": "syncfusion.licensing/20.1.0.48",
-      "hashPath": "syncfusion.licensing.20.1.0.48.nupkg.sha512"
+      "sha512": "sha512-YWRaFUFacdauuJ5E/zoy5t/STkaeYbpPP+cc3T4E2R9L0jg9ziAIk4zxn5E74ixks7RskDh2h+tkn1MlzErE+w==",
+      "path": "syncfusion.compression.base/20.1.0.50",
+      "hashPath": "syncfusion.compression.base.20.1.0.50.nupkg.sha512"
     },
-    "Syncfusion.Pdf.WinForms/20.1.0.48": {
+    "Syncfusion.Licensing/20.1.0.50": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c8cXBsrhuUpw+xdVY1BNNMKiPHyVBEP/lPxTaG6zF4IkvXrOT7vcMpymi6cZt+to1l2DzhPaqD6BwakXBmc8Ug==",
-      "path": "syncfusion.pdf.winforms/20.1.0.48",
-      "hashPath": "syncfusion.pdf.winforms.20.1.0.48.nupkg.sha512"
+      "sha512": "sha512-sQBaysAP2fQ0ISeJjowl7wpiLjAwTUKxvQrft+QYTtjYbaUSxfoEh7tYi2/Pgs8qnGIrp+6PzIALI9bcVFPflw==",
+      "path": "syncfusion.licensing/20.1.0.50",
+      "hashPath": "syncfusion.licensing.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Pdf.WinForms/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-37g8EOQGXgUKFvdEp+6C5ezGZqxShsKLgYS4zOGlkALA4LCy7cpx+cVzRCi6u6Vu/K+FvJ1MO0XTpzNPzUOqmw==",
+      "path": "syncfusion.pdf.winforms/20.1.0.50",
+      "hashPath": "syncfusion.pdf.winforms.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.PdfViewer.Windows/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eWkAE3qpKWikQitxWMZ5Ki2ADsEecscFGSLeU13KEVaEsY/1XgiDIRqMuTeRpcac1atvdMpiiI35/QEaE/Z2JA==",
+      "path": "syncfusion.pdfviewer.windows/20.1.0.50",
+      "hashPath": "syncfusion.pdfviewer.windows.20.1.0.50.nupkg.sha512"
+    },
+    "Syncfusion.Shared.Base/20.1.0.50": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNy+Oj6Cm7Nh3bvZ/QFFmwcX9sBYfhVk/0ajRF9kdefwzUY0SjLaln/rP2KT0szMstTUmW/annbFSVkuBZcZyA==",
+      "path": "syncfusion.shared.base/20.1.0.50",
+      "hashPath": "syncfusion.shared.base.20.1.0.50.nupkg.sha512"
     }
   }
 }

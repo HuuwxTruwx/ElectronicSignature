@@ -40,9 +40,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "Krypton.Toolkit": {
+              "target": "Package",
+              "version": "[65.22.4.94, )"
+            },
             "Syncfusion.Pdf.WinForms": {
               "target": "Package",
-              "version": "[20.1.0.48, )"
+              "version": "[20.1.0.50, )"
+            },
+            "Syncfusion.PdfViewer.Windows": {
+              "target": "Package",
+              "version": "[20.1.0.50, )"
             }
           },
           "imports": [
@@ -63,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

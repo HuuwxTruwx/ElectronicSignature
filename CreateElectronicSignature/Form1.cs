@@ -7,70 +7,52 @@ namespace CreateElectronicSignature
         public Form1()
         {
             InitializeComponent();
-        }
 
-        RSA rsa = RSA.Instance;
-        byte[] sign;
-        private void button1_Click(object sender, EventArgs e)
+            Form3 form3 = new Form3();
+            openChildFormInPanel(form3);
+        }    
+        private Form activeForm = null;
+        private void openChildFormInPanel(Form childForm)
         {
-            byte[] data = Encoding.ASCII.GetBytes(richTextBox1.Text);
-
-            sign = rsa.GenarateSignature(data);
-            richTextBox4.Text = Encoding.ASCII.GetString(sign);          
-
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            childForm.Size = panelChild.Size;
+            panelChild.Controls.Add(childForm);
+            panelChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            byte[] data = Encoding.ASCII.GetBytes(richTextBox5.Text);
-            //byte[] sign = Encoding.ASCII.GetBytes(richTextBox4.Text);
-            bool trust = rsa.VerifySignature(data, sign);
-            MessageBox.Show(trust.ToString());
-        }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
             //rsa.LoadKeyFromXML(richTextBox1.Text);
             //richTextBox1.Text = rsa.GetPublicAndPrivateKey();
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            rsa.SaveKeyToXML();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {          
-            rsa.LoadKeyFromXML();
-            richTextBox2.Text =rsa.GetPublicKeyXML();
-            richTextBox3.Text = rsa.GetPrivateKeyXML();
-            
-        }
-
+     
        
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            Form2 form2 = new Form2();
+            
+            openChildFormInPanel(form2);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            openChildFormInPanel(form3);
+        }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            rsa.GenerateKeys();
-          
-            
-        }
-
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            rsa.MakeCert();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            SignPdf signPdf = new SignPdf();
-            signPdf.Sign2();
+            Form4 form4 = new Form4();
+            openChildFormInPanel(form4);
         }
     }
 }
